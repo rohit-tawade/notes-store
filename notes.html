@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>All Notes | StudyNotes</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark.css" id="dark-mode-style" disabled>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="glass-nav">
+        <div class="logo">
+            <i class="fas fa-book-open"></i>
+            <h1>StudyNotes</h1>
+        </div>
+        <nav>
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="notes.html"><i class="fas fa-sticky-note"></i> Notes</a>
+            <a href="#" id="cart-btn"><i class="fas fa-shopping-cart"></i> Cart (<span id="cart-count">0</span>)</a>
+            <button id="dark-mode-toggle"><i class="fas fa-moon"></i></button>
+            <div class="search-container">
+                <input type="text" id="global-search" placeholder="Search notes...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="notes-header">
+            <h1>All Notes</h1>
+            <div class="filter-controls">
+                <div class="search-filter">
+                    <input type="text" id="notes-search" placeholder="Search notes...">
+                    <button id="notes-search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                <select id="subject-filter">
+                    <option value="all">All Subjects</option>
+                    <option value="math">Mathematics</option>
+                    <option value="physics">Physics</option>
+                    <option value="chemistry">Chemistry</option>
+                    <option value="biology">Biology</option>
+                </select>
+                <select id="sort-by">
+                    <option value="price-asc">Price: Low to High</option>
+                    <option value="price-desc">Price: High to Low</option>
+                    <option value="pages-asc">Pages: Few to Many</option>
+                    <option value="pages-desc">Pages: Many to Few</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="all-notes">
+            <div class="notes-grid" id="all-notes">
+                <!-- All notes will be loaded here by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>StudyNotes</h3>
+                <p>Premium academic notes for students</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="notes.html">All Notes</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 StudyNotes. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/cart.js"></script>
+</body>
+</html>

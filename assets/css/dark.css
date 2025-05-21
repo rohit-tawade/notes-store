@@ -1,0 +1,66 @@
+:root {
+    --background: #121212;
+    --card-bg: #1e1e1e;
+    --text: #e0e0e0;
+    --text-light: #b0b0b0;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+}
+
+.glass-nav {
+    background: rgba(30, 30, 30, 0.8);
+    color: var(--text);
+}
+
+.glass-nav a {
+    color: var(--text);
+}
+
+#dark-mode-toggle {
+    color: var(--text);
+}
+
+.search-container, .search-filter {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+#global-search, #notes-search {
+    color: var(--text);
+}
+
+.note-card, .order-summary, .payment-form, .success-container {
+    background-color: var(--card-bg);
+    box-shadow: var(--shadow);
+}
+
+.note-subject {
+    background: rgba(67, 97, 238, 0.2);
+}
+
+.category-btn, #subject-filter, #sort-by, .form-group input {
+    background-color: var(--card-bg);
+    color: var(--text);
+    border-color: #333;
+}
+
+.wishlist-btn {
+    border-color: var(--text);
+    color: var(--text);
+}
+
+.wishlist-btn:hover {
+    background-color: var(--text);
+    color: var(--card-bg);
+}
+
+.order-item, .download-list li {
+    border-color: #333;
+}
+
+footer {
+    background-color: #0a0a0a;
+}

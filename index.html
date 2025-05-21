@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>StudyNotes - Premium Academic Notes</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark.css" id="dark-mode-style" disabled>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="glass-nav">
+        <div class="logo">
+            <i class="fas fa-book-open"></i>
+            <h1>StudyNotes</h1>
+        </div>
+        <nav>
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="notes.html"><i class="fas fa-sticky-note"></i> Notes</a>
+            <a href="checkout.html" id="cart-btn"><i class="fas fa-shopping-cart"></i> Cart (<span id="cart-count">0</span>)</a>
+            <button id="dark-mode-toggle"><i class="fas fa-moon"></i></button>
+            <div class="search-container">
+                <input type="text" id="global-search" placeholder="Search notes...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Premium Academic Notes</h2>
+                <p>Download high-quality, handwritten notes for your studies</p>
+                <div class="hero-buttons">
+                    <a href="notes.html" class="cta-button">Browse Notes</a>
+                    <a href="#featured" class="cta-button secondary">Featured</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="featured" class="featured-notes">
+            <h2>Featured Notes</h2>
+            <div class="notes-grid" id="featured-notes">
+                <!-- Featured notes will be loaded here by JavaScript -->
+            </div>
+        </section>
+
+        <section class="categories">
+            <h2>Categories</h2>
+            <div class="category-buttons">
+                <button class="category-btn" data-category="math">Mathematics</button>
+                <button class="category-btn" data-category="physics">Physics</button>
+                <button class="category-btn" data-category="chemistry">Chemistry</button>
+                <button class="category-btn" data-category="biology">Biology</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>StudyNotes</h3>
+                <p>Premium academic notes for students</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="notes.html">All Notes</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 StudyNotes. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/cart.js"></script>
+</body>
+</html>
